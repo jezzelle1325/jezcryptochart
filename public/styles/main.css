@@ -1,0 +1,124 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set up root variables */
+:root {
+  --primary-color: #5ddcff;
+  --secondary-color: #3c67e3;
+  --tertiary-color: #4e00c2;
+  --rotate: 132deg;
+}
+
+/* Body styling */
+body {
+  min-height: 100vh;
+  /* background-image: linear-gradient(to left, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/public/images/bitcoin.jpg); */
+  /* background: url("../images/crypto_set.jpg"); */
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75)), url("../images/crypto_set.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+img{
+  width: 300px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+/* Header styling */
+h1 {
+  color: #fff;
+  font-family: "Titan One", cursive;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+h2 {
+  font-weight: bolder;
+  font-size: 50px !important;
+  margin-bottom: 30px !important;
+}
+
+/* Table styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 10px !important;
+}
+
+table thead th {
+  background-color: #f8f9fa;
+  color: #343a40;
+  font-weight: bold;
+  text-align: left;
+  font-size: 25px;
+  padding: 20px;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #dee2e6;
+}
+
+table tbody td {
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  vertical-align: middle;
+  color: whitesmoke;
+}
+
+table tbody tr:hover {
+  background-color: #18dd40;
+}
+
+/* Links styling */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* User styling */
+.user {
+  font-size: 24px;
+  font-family: "Titan One", cursive;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+/* Pagination styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  color: var(--primary-color);
+  text-decoration: none;
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
